@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="7" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="9" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="10" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="11" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="12" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="13" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="14" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="15" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="16" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="17" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="18" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="19" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="20" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="21" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="22" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="23" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="24" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="25" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="28" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="29" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="30" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="31" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="32" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">ID_MAT</Data></Cell>
+			<Cell><Data ss:Type="String">NREDS</Data></Cell>
+			<Cell><Data ss:Type="String">ORG_UN_REG</Data></Cell>
+			<Cell><Data ss:Type="String">UN_AREA_MIL</Data></Cell>
+			<Cell><Data ss:Type="String">UN_REGISTRO</Data></Cell>
+			<Cell><Data ss:Type="String">COD_DIAO</Data></Cell>
+			<Cell><Data ss:Type="String">T_C</Data></Cell>
+			<Cell><Data ss:Type="String">LOG_TIPO</Data></Cell>
+			<Cell><Data ss:Type="String">LOGRADOURO</Data></Cell>
+			<Cell><Data ss:Type="String">LOGRADOURO_NAO_CAD</Data></Cell>
+			<Cell><Data ss:Type="String">LOGRADOURO_CRUZ</Data></Cell>
+			<Cell><Data ss:Type="String">LOGRADOURO_CRUZ_NAO_CAD</Data></Cell>
+			<Cell><Data ss:Type="String">N_LOG</Data></Cell>
+			<Cell><Data ss:Type="String">BAIRRO</Data></Cell>
+			<Cell><Data ss:Type="String">BAIRRO_NAO_CAD</Data></Cell>
+			<Cell><Data ss:Type="String">COMPLEMENTO_END</Data></Cell>
+			<Cell><Data ss:Type="String">PONTO_REF</Data></Cell>
+			<Cell><Data ss:Type="String">MUNICIPIO</Data></Cell>
+			<Cell><Data ss:Type="String">LATITUDE</Data></Cell>
+			<Cell><Data ss:Type="String">LONGITUDE</Data></Cell>
+			<Cell><Data ss:Type="String">DATA_FATO</Data></Cell>
+			<Cell><Data ss:Type="String">HORA_FATO</Data></Cell>
+			<Cell><Data ss:Type="String">DESC_TIPO_MATERIAL</Data></Cell>
+			<Cell><Data ss:Type="String">UNIDADE_MEDIDA</Data></Cell>
+			<Cell><Data ss:Type="String">SITUACAO_MATERIAL</Data></Cell>
+			<Cell><Data ss:Type="String">QTDE_MAT</Data></Cell>
+			<Cell><Data ss:Type="String">QTDE_MAT_VOL</Data></Cell>
+			<Cell><Data ss:Type="String">UEOP</Data></Cell>
+			<Cell><Data ss:Type="String">COMPANHIA</Data></Cell>
+			<Cell><Data ss:Type="String">FRACAO</Data></Cell>
+			<Cell><Data ss:Type="String">SETOR</Data></Cell>
+			<Cell><Data ss:Type="String">VALIDADOR</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+			<Cell><Data ss:Type="String">2019-001636157-001</Data></Cell>
+			<Cell><Data ss:Type="String">POLICIA MILITAR</Data></Cell>
+			<Cell><Data ss:Type="String">142 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">142 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">C01157</Data></Cell>
+			<Cell><Data ss:Type="String">CONSUMADO</Data></Cell>
+			<Cell><Data ss:Type="String">RUA</Data></Cell>
+			<Cell><Data ss:Type="String">RUBI</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PREENCHIMENTO OPCIONAL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">64</Data></Cell>
+			<Cell><Data ss:Type="String">NITEROI</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">DIVINOPOLIS</Data></Cell>
+			<Cell><Data ss:Type="String">-20,14126160</Data></Cell>
+			<Cell><Data ss:Type="String">-44,87716350</Data></Cell>
+			<Cell><Data ss:Type="String">2019-01-11</Data></Cell>
+			<Cell><Data ss:Type="String">17:27:00</Data></Cell>
+			<Cell><Data ss:Type="String">SIMULACRO DE ARMA DE FOGO (USO RESTRITO)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">APREENDIDO</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+			<Cell><Data ss:Type="String">23º BPM</Data></Cell>
+			<Cell><Data ss:Type="String">142ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">142ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">NITEROI</Data></Cell>
+			<Cell><Data ss:Type="String">BAIRRO</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+			<Cell><Data ss:Type="String">2019-001684246-001</Data></Cell>
+			<Cell><Data ss:Type="String">POLICIA MILITAR</Data></Cell>
+			<Cell><Data ss:Type="String">142 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">142 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">C01157</Data></Cell>
+			<Cell><Data ss:Type="String">CONSUMADO</Data></Cell>
+			<Cell><Data ss:Type="String">RUA</Data></Cell>
+			<Cell><Data ss:Type="String">JAO</Data></Cell>
+			<Cell><Data ss:Type="String">ROSA FONSECA E SILVA</Data></Cell>
+			<Cell><Data ss:Type="String">PREENCHIMENTO OPCIONAL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">680.000</Data></Cell>
+			<Cell><Data ss:Type="String">SANTA ROSA</Data></Cell>
+			<Cell><Data ss:Type="String">SANTA ROSA</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">DIVINOPOLIS</Data></Cell>
+			<Cell><Data ss:Type="String">-20,16601690</Data></Cell>
+			<Cell><Data ss:Type="String">-44,86163770</Data></Cell>
+			<Cell><Data ss:Type="String">2019-01-11</Data></Cell>
+			<Cell><Data ss:Type="String">18:53:43</Data></Cell>
+			<Cell><Data ss:Type="String">SIMULACRO DE ARMA DE FOGO (USO RESTRITO)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">APREENDIDO</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+			<Cell><Data ss:Type="String">23º BPM</Data></Cell>
+			<Cell><Data ss:Type="String">142ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">142ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">PORTO VELHO</Data></Cell>
+			<Cell><Data ss:Type="String">BAIRRO</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+			<Cell><Data ss:Type="String">2019-005790446-002</Data></Cell>
+			<Cell><Data ss:Type="String">POLICIA MILITAR</Data></Cell>
+			<Cell><Data ss:Type="String">3 PEL/139 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">139 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">C01157</Data></Cell>
+			<Cell><Data ss:Type="String">CONSUMADO</Data></Cell>
+			<Cell><Data ss:Type="String">SITIO</Data></Cell>
+			<Cell><Data ss:Type="String">VARJAO CLO 0685 JOSE SOARES</Data></Cell>
+			<Cell><Data ss:Type="String">POVOADO FORMIGUINHA CLO 0685</Data></Cell>
+			<Cell><Data ss:Type="String">PREENCHIMENTO OPCIONAL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0.00000</Data></Cell>
+			<Cell><Data ss:Type="String">INVÁLIDO</Data></Cell>
+			<Cell><Data ss:Type="String">ZONA RURAL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">FAZENDA BREJÃO</Data></Cell>
+			<Cell><Data ss:Type="String">CLAUDIO</Data></Cell>
+			<Cell><Data ss:Type="String">-20,43400990</Data></Cell>
+			<Cell><Data ss:Type="String">-44,86829250</Data></Cell>
+			<Cell><Data ss:Type="String">2019-02-06</Data></Cell>
+			<Cell><Data ss:Type="String">21:20:00</Data></Cell>
+			<Cell><Data ss:Type="String">SIMULACRO DE ARMA DE FOGO (USO RESTRITO)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">APREENDIDO</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+			<Cell><Data ss:Type="String">23º BPM</Data></Cell>
+			<Cell><Data ss:Type="String">139ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">3ºPEL - 139ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">CLAUDIO</Data></Cell>
+			<Cell><Data ss:Type="String">CLAUDIO</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">6</Data></Cell>
+			<Cell><Data ss:Type="String">2019-006289068-001</Data></Cell>
+			<Cell><Data ss:Type="String">POLICIA MILITAR</Data></Cell>
+			<Cell><Data ss:Type="String">2 GP/3 PEL/142 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">142 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">C01157</Data></Cell>
+			<Cell><Data ss:Type="String">TENTADO</Data></Cell>
+			<Cell><Data ss:Type="String">RUA</Data></Cell>
+			<Cell><Data ss:Type="String">PIO XII</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PREENCHIMENTO OPCIONAL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String">SAO FRANCISCO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PARQUE DE EXPOSIÇÕES</Data></Cell>
+			<Cell><Data ss:Type="String">SAO GONCALO DO PARA</Data></Cell>
+			<Cell><Data ss:Type="String">-19,99124650</Data></Cell>
+			<Cell><Data ss:Type="String">-44,84824600</Data></Cell>
+			<Cell><Data ss:Type="String">2019-02-09</Data></Cell>
+			<Cell><Data ss:Type="String">20:28:13</Data></Cell>
+			<Cell><Data ss:Type="String">SIMULACRO DE ARMA DE FOGO (USO RESTRITO)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">APREENDIDO</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+			<Cell><Data ss:Type="String">23º BPM</Data></Cell>
+			<Cell><Data ss:Type="String">142ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">2º GP - 3ºPEL - 142ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">C.CAJURU/S.G.PARÁ</Data></Cell>
+			<Cell><Data ss:Type="String">SAO GONCALO DO PARA</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">8</Data></Cell>
+			<Cell><Data ss:Type="String">2019-008335890-001</Data></Cell>
+			<Cell><Data ss:Type="String">POLICIA MILITAR</Data></Cell>
+			<Cell><Data ss:Type="String">DESATIVADASRACIONAL SEDE/63 BPM</Data></Cell>
+			<Cell><Data ss:Type="String">51 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">C01157</Data></Cell>
+			<Cell><Data ss:Type="String">CONSUMADO</Data></Cell>
+			<Cell><Data ss:Type="String">PRACA</Data></Cell>
+			<Cell><Data ss:Type="String">IMACULADA CONCEICAO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PREENCHIMENTO OPCIONAL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">6</Data></Cell>
+			<Cell><Data ss:Type="String">CENTRO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">ITAUNA</Data></Cell>
+			<Cell><Data ss:Type="String">-20,07509690</Data></Cell>
+			<Cell><Data ss:Type="String">-44,57191170</Data></Cell>
+			<Cell><Data ss:Type="String">2019-02-21</Data></Cell>
+			<Cell><Data ss:Type="String">22:07:44</Data></Cell>
+			<Cell><Data ss:Type="String">SIMULACRO DE ARMA DE FOGO (USO RESTRITO)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">APREENDIDO</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+			<Cell><Data ss:Type="String">23º BPM</Data></Cell>
+			<Cell><Data ss:Type="String">51ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">51ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">CENTRO PADRE EUSTAQUIO</Data></Cell>
+			<Cell><Data ss:Type="String">BAIRRO</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">14</Data></Cell>
+			<Cell><Data ss:Type="String">2019-014690557-001</Data></Cell>
+			<Cell><Data ss:Type="String">POLICIA MILITAR</Data></Cell>
+			<Cell><Data ss:Type="String">DESATIVADASRACIONAL SEDE/63 BPM</Data></Cell>
+			<Cell><Data ss:Type="String">51 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">C01157</Data></Cell>
+			<Cell><Data ss:Type="String">CONSUMADO</Data></Cell>
+			<Cell><Data ss:Type="String">RUA</Data></Cell>
+			<Cell><Data ss:Type="String">RACHEL RABELO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PREENCHIMENTO OPCIONAL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">231</Data></Cell>
+			<Cell><Data ss:Type="String">SANTA EDWIRGES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">229</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">ITAUNA</Data></Cell>
+			<Cell><Data ss:Type="String">-20,09716490</Data></Cell>
+			<Cell><Data ss:Type="String">-44,59042610</Data></Cell>
+			<Cell><Data ss:Type="String">2019-03-30</Data></Cell>
+			<Cell><Data ss:Type="String">13:40:00</Data></Cell>
+			<Cell><Data ss:Type="String">SIMULACRO DE ARMA DE FOGO (USO RESTRITO)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">APREENDIDO</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+			<Cell><Data ss:Type="String">23º BPM</Data></Cell>
+			<Cell><Data ss:Type="String">51ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">51ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">SANTANENSE MORADA NOVA</Data></Cell>
+			<Cell><Data ss:Type="String">BAIRRO</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">15</Data></Cell>
+			<Cell><Data ss:Type="String">2019-015457103-001</Data></Cell>
+			<Cell><Data ss:Type="String">POLICIA MILITAR</Data></Cell>
+			<Cell><Data ss:Type="String">142 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">142 CIA PM/23 BPM/7 RPM</Data></Cell>
+			<Cell><Data ss:Type="String">C01157</Data></Cell>
+			<Cell><Data ss:Type="String">CONSUMADO</Data></Cell>
+			<Cell><Data ss:Type="String">AVENIDA</Data></Cell>
+			<Cell><Data ss:Type="String">DOLORES DE AGUIAR RABELO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PREENCHIMENTO OPCIONAL</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">160</Data></Cell>
+			<Cell><Data ss:Type="String">INTERLAGOS</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">DIVINOPOLIS</Data></Cell>
+			<Cell><Data ss:Type="String">-20,15371610</Data></Cell>
+			<Cell><Data ss:Type="String">-44,87655120</Data></Cell>
+			<Cell><Data ss:Type="String">2019-04-03</Data></Cell>
+			<Cell><Data ss:Type="String">20:29:02</Data></Cell>
+			<Cell><Data ss:Type="String">SIMULACRO DE ARMA DE FOGO (USO RESTRITO)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">APREENDIDO</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+			<Cell><Data ss:Type="Number"></Data></Cell>
+			<Cell><Data ss:Type="String">23º BPM</Data></Cell>
+			<Cell><Data ss:Type="String">142ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">142ª CIA PM</Data></Cell>
+			<Cell><Data ss:Type="String">PORTO VELHO</Data></Cell>
+			<Cell><Data ss:Type="String">BAIRRO</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

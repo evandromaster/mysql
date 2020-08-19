@@ -1,0 +1,21 @@
+import csv
+import mysql.connector
+# open the connection to the MySQL server.
+# using MySQLd
+mydb = mysql.connector.connect(host='localhost', user='root', passwd='seo23', db='gdo')
+cursor = mydb.cursor()
+sql = "truncate tbl_crimes"
+sql1 = "INSERT INTO tbl_crimes(NREDS, ORG_UN_REG, UN_AREA_MIL, UN_RELATO, UN_DIGITACAO, UN_REGISTRO, COD_DIAO, T_C, COD_DIAO1, T_C1, COD_DIAO2, T_C2, COD_DIAO3, T_C3, ALVO, DESC_MEIO_UTILIZADO)"\
+       "VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+cursor.execute(sql)
+
+
+with open('C:/Users/Geo/Documents/MEGAsync/MySql/200 - PythonMySQL/Arquivos/tbl_crimes16.csv', 'r', encoding="utf8") as entrada:
+    ler = csv.reader(entrada, delimiter=';', quotechar='|')
+    next(entrada)# pula a primeira linha
+    for linha in ler:
+        cursor.execute(sql1, linha)
+        #print(datetime.strptime(linha[1], '%d/%m/%Y').date())
+
+mydb.commit()
+cursor.close()

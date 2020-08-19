@@ -1,0 +1,19 @@
+Error Code: 2013. Lost connection to MySQL server during query
+em preferencers 
+
+
+New versions of MySQL WorkBench have an option to change specific timeouts.
+
+For me it was under Edit → Preferences → SQL Editor → DBMS connection read time out (in seconds): 600
+
+*****************
+
+
+mude para  secure-file-priv = "" no arquivo my.ini
+
+C:\ProgramData\MySQL\MySQL Server 8.0;
+
+
+
+-- use  isto  aceitar a carga do pandas;
+set global max_allowed_packet=268435456;

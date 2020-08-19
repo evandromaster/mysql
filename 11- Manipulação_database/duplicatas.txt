@@ -1,0 +1,9 @@
+select *, count(*) as qtde from tbl_validador_cia
+
+-- and RATNUM_ATIVIDADE '2018-017776630-001',
+where MUNICIPIO in (
+'DIVINOPOLIS'
+)
+group by VALIDADOR, VALIDADOR_TIPO
+
+HAVING qtde > 1;

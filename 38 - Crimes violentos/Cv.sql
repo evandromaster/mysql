@@ -1,0 +1,61 @@
+SELECT
+	NREDS,
+    DATA_FATO,
+    year( DATA_FATO) ANO,
+    LOGRADOURO,
+    N_LOG,
+    pdca.tbl_ocorrencias.COD_DIAO,
+    DESC_SUBCLASSE,
+    COUNT(*) AS FREQ
+
+
+FROM pdca.tbl_ocorrencias
+
+INNER JOIN seo.tbl_natureza
+ON pdca.tbl_ocorrencias.COD_DIAO = seo.tbl_natureza.COD_SUBCLASSE
+
+where DATA_FATO between '2015-01-01' and '2019-12-24'
+
+AND
+
+	((LOGRADOURO = 'PRIMEIRO DE JUNHO' and N_LOG between 450 and 600)
+	or (LOGRADOURO ='SAO PAULO' and N_LOG between 0 and 300)
+	or (LOGRADOURO ='GETULIO VARGAS' and N_LOG between 450 and 550))
+
+AND COD_DIAO NOT LIKE 'T%'
+
+
+
+		AND (( -- INÍCIO CONDIÇÃO PRINCIPAL		
+				(COD_DIAO in ('B01148', 'C01159', 'C01158') and T_C = 'CONSUMADO')	  
+				or  COD_DIAO in ('C01157', 'B01121', 'D01213', 'D01217')
+			) -- FIM CONDIÇÃO PRINCIAPAL (NATUREZAS)
+
+
+or ( -- INÍCIO CONDIÇÃO NATUREZA SECUNDARIA1		
+				(COD_DIAO1 in ('B01148', 'C01159', 'C01158') and T_C1 = 'CONSUMADO')	  
+				or  COD_DIAO1 in ('C01157', 'B01121', 'D01213', 'D01217')
+			) -- FIM CONDIÇÃO 1 (NATUREZAS)
+
+or ( -- INÍCIO CONDIÇÃO NATUREZA SECUNDARIA2		
+				(COD_DIAO2 in ('B01148', 'C01159', 'C01158') and T_C2 = 'CONSUMADO')	  
+				or  COD_DIAO2 in ('C01157', 'B01121', 'D01213', 'D01217')
+			) -- FIM CONDIÇÃO 2 (NATUREZAS)
+
+
+or ( -- INÍCIO CONDIÇÃO NATUREZA SECUNDARIA3		
+				(COD_DIAO3 in ('B01148', 'C01159', 'C01158') and T_C3 = 'CONSUMADO')	  
+				or  COD_DIAO3 in ('C01157', 'B01121', 'D01213', 'D01217')
+			) -- FIM CONDIÇÃO 3 (NATUREZAS)
+
+			)     
+		-- and (right(NREDS,3) = '001') -- CONDIÇÃO 2 (EXCLUI OCORRÊNCIAS ASSOCIADAS, DIREFENTES DE 001) REGRA DESATIVADA - EM 2019 CONTA 002 E 003 TAMBÉM
+
+
+
+
+
+
+ group by COD_DIAO
+;
+;

@@ -1,0 +1,22 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `wendel`@`%` 
+    SQL SECURITY DEFINER
+VIEW `vw_metas_abs_cv` AS
+    SELECT 
+        `tbl_gdo_ref_2017`.`CIA_BASE` AS `Fracao`,
+        COUNT(0) AS `Crimes_2017`,
+        (CASE
+            WHEN (`tbl_gdo_ref_2017`.`UEOP` = '23º BPM') THEN (COUNT(0) * 0.8811)
+            WHEN (`tbl_gdo_ref_2017`.`UEOP` = '7º BPM') THEN (COUNT(0) * 0.8196)
+            WHEN (`tbl_gdo_ref_2017`.`UEOP` = '63º BPM') THEN (COUNT(0) * 0.9187)
+            WHEN (`tbl_gdo_ref_2017`.`UEOP` = '60º BPM') THEN (COUNT(0) * 0.8956)
+            WHEN (`tbl_gdo_ref_2017`.`UEOP` = '19º CIA PM IND') THEN (COUNT(0) * 0.8173)
+            ELSE 'other goal'
+        END) AS `Meta_2018`
+    FROM
+        `tbl_gdo_ref_2017`
+    WHERE
+        ((`tbl_gdo_ref_2017`.`DATA_FATO` > STR_TO_DATE('01/01/2017', '%d/%m/%Y'))
+            AND (`tbl_gdo_ref_2017`.`DATA_FATO` < STR_TO_DATE('31/12/2017', '%d/%m/%Y')))
+    GROUP BY `tbl_gdo_ref_2017`.`CIA_BASE`

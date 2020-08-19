@@ -1,0 +1,6 @@
+SET SQL_SAFE_UPDATES=0;
+show global variables like 'local_infile';
+
+set global local_infile =true;
+
+set global local_infile =1;

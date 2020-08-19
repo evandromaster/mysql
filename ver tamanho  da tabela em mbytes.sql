@@ -1,0 +1,2 @@
+SELECT table_name "tbl_crimes10", data_length / 1024 / 1024 "Tamanho da tabela em MB", index_length / 1024 / 1024 "Tamanho do indice em MB", engine 
+ FROM information_schema.TABLES WHERE table_name like 'tbl_crimes10';

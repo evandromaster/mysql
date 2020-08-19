@@ -1,0 +1,7 @@
+SELECT * FROM gdo.tbl_rat_resultados_rqv
+WHERE DTA_INICIO between '2019-01-01' and '2019-03-31'
+    
+AND NATCODIGO IN ('Y07001', 'Y07003', 'Y07004', 'Y07005')
+AND NOM_UNID_RESPONSAVEL not in (SELECT UN_REGISTRO FROM tbl_un_especializada)
+-- AND SETOR = 'OTHER'
+;

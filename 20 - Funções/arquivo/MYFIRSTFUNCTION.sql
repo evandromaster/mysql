@@ -1,0 +1,77 @@
+CREATE TABLE TESTE (
+	CAMPO1 smallint PRIMARY KEY,
+    CAMPO2 VARCHAR(50),
+    CAMPO3 VARCHAR(50)
+
+);
+
+INSERT INTO TESTE VALUES	(4, 'PRIMEIRO4', 'SEGUNDO4'),
+							(5, 'PRIMEIRO5', 'SEGUNDO5'),
+							(6, 'PRIMEIRO6', 'SEGUNDO6');
+                            
+
+SELECT CAMPO1, CAMPO2,
+
+CASE
+	WHEN CAMPO3 LIKE 'SEGUNDO%'
+    THEN 1
+    ELSE 0
+END AS TEM_SEGUNDO,
+
+CASE
+	WHEN CAMPO3 LIKE '%2'
+    THEN 1
+    ELSE 0
+END AS TEM_2
+
+ 
+ FROM TESTE;
+ 
+ 
+DELIMITER $$
+CREATE FUNCTION hasSEGUNDO(campoTeste VARCHAR(50))
+RETURNS SMALLINT
+BEGIN
+  RETURN
+	CASE
+		WHEN campoTeste LIKE '%SEGUNDO%'
+        THEN 1
+        ELSE 0
+    END;
+END$$
+DELIMITER ;
+
+SELECT *, hasSEGUNDO(CAMPO3) AS TEM_SEGUNDO FROM TESTE;
+
+DELIMITER $$
+CREATE FUNCTION ABORDADOS(descricao VARCHAR(100), quantidade INT(11))
+RETURNS SMALLINT
+BEGIN
+	RETURN
+		SUM(DISTINCT(
+					CASE
+						WHEN descricao = 'Qde de pessoas abordadas'
+						THEN quantidade
+						ELSE 0
+					END
+            ));
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE FUNCTION VEICULOS_FISCALIZADOS(descricao VARCHAR(100), quantidade INT(11))
+RETURNS SMALLINT
+BEGIN
+	RETURN
+		SUM(DISTINCT(
+					CASE
+						WHEN descricao = 'Qde de veiculos fiscalizados'
+						THEN quantidade
+						ELSE 0
+					END
+            ));
+END$$
+DELIMITER ;
+
+DROP FUNCTION ABORDADOS;
+

@@ -1,0 +1,3 @@
+delete from rat
+
+where DTA_HRA_INCLUSAO BETWEEN '2010-01-01' AND '2018-12-31'

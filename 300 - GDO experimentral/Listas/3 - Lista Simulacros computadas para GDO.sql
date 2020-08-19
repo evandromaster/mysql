@@ -1,0 +1,6 @@
+SELECT * FROM gdo.vw_valid_materiais
+
+where data_fato between '2019-01-01' and '2019-04-30'
+-- and DATA_ULT_ATT <= '2019-01-04'
+
+AND MUNICIPIO IN ('DIVINOPOLIS', 'CARMO DO CAJURU', 'CLAUDIO', 'SAO GONCALO DO PARA', 'ITAUNA', 'ITATIAIUCU');

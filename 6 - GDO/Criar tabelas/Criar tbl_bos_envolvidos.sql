@@ -1,0 +1,48 @@
+drop table tbl_bos_envolvidos;
+
+CREATE TABLE tbl_bos_envolvidos (
+	ID int NOT NULL AUTO_INCREMENT,
+	NUM_ATIVIDADE varchar(18) NOT NULL,
+	NOM_ENVOLVIDO varchar(100) DEFAULT NULL,
+	NOM_MAE varchar(100) DEFAULT NULL,
+	TIPO_ENVOLVIMENTO varchar(100) DEFAULT NULL,
+	TIPO_LOGRADOURO varchar(30) null,
+	LOGRADOURO varchar(100) null,
+	DES_ENDERECO varchar(100) null, -- esse campo foi desativado por causa que o arquivo csv encontra-se truncado
+	NUM_ENDERECO varchar(20) null,
+	COMPLEMENTO_ALFA varchar(30) null,
+	COMPLEMENTO_ENDERECO varchar(30) null,
+	NUM_COMPLEMENTAR varchar(30) null,
+	COD_BAIRRO varchar(20) null,
+	NOME_BAIRRO varchar(50) null,
+	COD_MUNICIPIO integer null,
+	MUNICIPIO varchar(50) null,
+
+  PRIMARY KEY (`ID`),
+  KEY `NUM_ATIVIDADE` (`NUM_ATIVIDADE`),
+  CONSTRAINT `tbl_bos_envolvidos_ibfk_1` 
+  FOREIGN KEY (`NUM_ATIVIDADE`) REFERENCES `tbl_bos` (`RATNUM_ATIVIDADE`)
+) 
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4;
+
+/*
+
+
+
+NUM_ATIVIDADE
+NOM_ENVOLVIDO	
+NOM_MAE
+TIPO_ENVOLVIMENTO
+TIPO_LOGRADOURO	
+LOGRADOURO
+DES_ENDERECO
+NUM_ENDERECO
+COMPLEMENTO_ALFA
+COMPLEMENTO_ENDERECO
+NUM_COMPLEMENTAR
+COD_BAIRRO
+NOME_BAIRRO
+COD_MUNICIPIO
+MUNICIPIO
+

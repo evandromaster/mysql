@@ -1,0 +1,4 @@
+select max(ratnum_atividade), count(*) as freq from rat
+
+
+where rat.RATNUM_ATIVIDADE=rat_efetivo.NUM_ATIVIDADE

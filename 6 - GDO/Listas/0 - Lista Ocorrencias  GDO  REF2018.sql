@@ -1,0 +1,8 @@
+SELECT * FROM gdo.vw_valid_gdo_ref_2018
+
+where data_fato between '2018-01-01' and '2018-12-31'
+
+
+AND MUNICIPIO IN ('DIVINOPOLIS', 'CARMO DO CAJURU', 'CLAUDIO', 'SAO GONCALO DO PARA', 'ITAUNA', 'ITATIAIUCU')
+and DATA_ULT_ATT <= '2019-01-04'
+;

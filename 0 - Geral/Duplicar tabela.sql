@@ -1,0 +1,1 @@
+CREATE TABLE rat_bkp SELECT * FROM rat;

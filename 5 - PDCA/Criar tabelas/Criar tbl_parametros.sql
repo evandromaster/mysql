@@ -1,0 +1,30 @@
+DROP TABLE IF EXISTS tbl_parametros; 
+
+
+CREATE TABLE IF NOT EXISTS tbl_parametros
+
+(
+
+
+
+ID int AUTO_INCREMENT, 
+FONTE VARCHAR (10),
+TIPO VARCHAR (20),
+PARAMETROS VARCHAR (50),
+PESO DECIMAL (13,4),
+REGRAS  VARCHAR (1000),
+OBSERVACAO  VARCHAR (100),
+primary key (id)
+
+
+)
+ENGINE=InnoDB 
+DEFAULT CHARSET=utf8mb4
+
+
+
+;
+
+
+
+

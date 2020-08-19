@@ -1,0 +1,28 @@
+create view vw_cv as 
+SELECT *
+
+
+FROM tbl_ocorrencias
+where 
+ (( -- INÍCIO CONDIÇÃO PRINCIPAL		
+				(COD_DIAO in ('B01148', 'C01159', 'C01158') and T_C = 'CONSUMADO')	  
+				or  COD_DIAO in ('C01157', 'B01121', 'D01213', 'D01217')
+			) -- FIM CONDIÇÃO PRINCIAPAL (NATUREZAS)
+
+
+or ( -- INÍCIO CONDIÇÃO NATUREZA SECUNDARIA1		
+				(COD_DIAO1 in ('B01148', 'C01159', 'C01158') and T_C1 = 'CONSUMADO')	  
+				or  COD_DIAO1 in ('C01157', 'B01121', 'D01213', 'D01217')
+			) -- FIM CONDIÇÃO 1 (NATUREZAS)
+
+or ( -- INÍCIO CONDIÇÃO NATUREZA SECUNDARIA2		
+				(COD_DIAO2 in ('B01148', 'C01159', 'C01158') and T_C2 = 'CONSUMADO')	  
+				or  COD_DIAO2 in ('C01157', 'B01121', 'D01213', 'D01217')
+			) -- FIM CONDIÇÃO 2 (NATUREZAS)
+
+
+or ( -- INÍCIO CONDIÇÃO NATUREZA SECUNDARIA3		
+				(COD_DIAO3 in ('B01148', 'C01159', 'C01158') and T_C3 = 'CONSUMADO')	  
+				or  COD_DIAO3 in ('C01157', 'B01121', 'D01213', 'D01217')
+			)) -- FIM CONDIÇÃO 3 (NATUREZAS)
+

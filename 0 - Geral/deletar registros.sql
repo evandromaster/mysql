@@ -1,0 +1,1 @@
+DELETE FROM tbl_un_especializada WHERE UN_REGISTRO = '';

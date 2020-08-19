@@ -1,0 +1,36 @@
+SELECT  DATA_FATO, NREDS, NOME_ENVOL, MUNICIPIO
+
+
+
+
+
+FROM tbl_envolvidos
+
+where data_fato between '2020-01-01' and '2020-12-31'
+
+and
+
+(( -- INÍCIO CONDIÇÃO PRINCIPAL		
+				(COD_DIAO in ('B01121') and T_C = 'CONSUMADO')	  
+				or  COD_DELITO in ('B01121') and T_C_DELITO = 'CONSUMADO')
+                OR NREDS = '2020-017068849-001'
+                
+			) -- FIM CONDIÇÃO PARA  (NATUREZAS)
+
+
+AND GRAU_LESAO = 'FATAL'
+AND GRUPO_TIPO_ENVOL = 'VITIMA'
+
+-- AND NREDS NOT IN ('2019-007891805-002','2019-007116067-001','2019-055650752-001')
+
+-- AND NREDS IN ('2019-010447049-002', '2019-010447049-001')
+
+-- and ueop = '63º BPM'
+
+-- group by MUNICIPIO   with rollup
+
+
+order by DATA_FATO
+
+
+;

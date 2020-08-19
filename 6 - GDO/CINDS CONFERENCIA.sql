@@ -1,0 +1,43 @@
+SELECT * FROM gdo.tbl_crimes
+
+
+
+WHERE data_fato between '2020-01-01' and '2020-12-31'
+
+AND
+
+(( -- INÍCIO CONDIÇÃO PRINCIPAL		
+				COD_DIAO in ('B01148', 'B01121', 'C01157', 'C01158', 'C01159','D01213', 'D01217')  
+				
+			) -- FIM CONDIÇÃO PRINCIAPAL (NATUREZAS)
+
+
+or ( -- INÍCIO CONDIÇÃO NATUREZA SECUNDARIA1		
+				COD_DIAO1 in ('B01148', 'B01121', 'C01157', 'C01158', 'C01159','D01213', 'D01217')  
+			) -- FIM CONDIÇÃO 1 (NATUREZAS)
+
+or ( -- INÍCIO CONDIÇÃO NATUREZA SECUNDARIA2		
+				COD_DIAO2 in ('B01148', 'B01121', 'C01157', 'C01158', 'C01159','D01213', 'D01217')  
+			) -- FIM CONDIÇÃO 2 (NATUREZAS)
+
+
+or ( -- INÍCIO CONDIÇÃO NATUREZA SECUNDARIA3		
+				COD_DIAO3 in ('B01148', 'B01121', 'C01157', 'C01158', 'C01159','D01213', 'D01217')  
+			) -- FIM CONDIÇÃO 3 (NATUREZAS)
+            
+or ( -- INÍCIO CONDIÇÃO NATUREZA SECUNDARIA2		
+			NREDS in (select NREDS from tbl_controle_auditorias where INDICADOR = 'INCLUSAO CRIME VIOLENTO')   			) -- FIM CONDIÇÃO 2 (NATUREZAS)
+
+			) 
+
+AND NREDS not in (select NREDS from tbl_controle_auditorias where INDICADOR IN ('DESCONTABILIZAR REDS', 'CONFLITO DE ENDEREÇO') AND AUDITADO = 'SIM')
+
+-- and NREDS = '2020-001324965-001'
+
+;
+
+SELECT * FROM gdo.tbl_controle_auditorias
+
+WHERE NREDS     in (select NREDS from tbl_controle_auditorias where INDICADOR in ('DESCONTABILIZAR REDS', 'CONFLITO DE ENDEREÇO') AND AUDITADO = 'SIM')
+
+;

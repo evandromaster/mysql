@@ -1,0 +1,31 @@
+select natureza, descricao, municipio, data_inicio, nome_unidade_servico, latitude, longitude from rat
+where data_inicio BETWEEN '2016-01-01' AND '2017-12-31'
+and ((municipio = 'divinopolis')
+or (municipio = 'carmo do cajuru')
+or (municipio = 'claudio')
+or (municipio = 'sao goncalo do para'))
+and natureza Like 'y%'
+and nome_unidade_servico not in
+('1 GP PM RV/1 PEL PM RV/7 CIA PM IND MAT',
+'1 GP PM/2 PEL PM MAMB/7 CIA PM IND MAT',
+'1 GP/1 PEL PM RV/7 CIA PM IND MAT',
+'1 GP/1 PEL RV/7 CIA PM IND MAT/7 RPM', 
+'1 GP/2 PEL MAMB/7 CIA PM IND MAT/7 RPM', 
+'1 GP/2 PEL PM MAMB/7 CIA PM IND MAT',
+'1 PEL PM RV/7 CIA PM IND MAT',
+'1 PEL RV/7 CIA PM IND MAT/7 RPM',
+'10BBM/1CIA/1PEL (DIVINOPOLIS)',
+'10BBM/1CIA/3PEL (DIVINOPOLIS)',
+'10BBM/3CIA PV (DIVINOPOLIS)',
+'2 GP PM/2 PEL PM MAMB/7 CIA PM IND MAT',
+'2 GP/1 PEL PM RV/7 CIA PM IND MAT',
+'2 GP/1 PEL RV/6 CIA PM IND MAT/6 RPM', 
+'2 GP/1 PEL RV/7 CIA PM IND MAT/7 RPM',
+'2 GP/2 PEL MAMB/7 CIA PM IND MAT/7 RPM',
+'2 GP/2 PEL PM MAMB/7 CIA PM IND MAT',
+'2 PEL MAMB/7 CIA PM IND MAT/7 RPM',
+'2 PEL PM MAMB/7 CIA PM IND MAT',
+'7 CIA PM IND MAT',
+'7 CIA PM IND MAT/7 RPM', 
+'SF 24 10BBM')
+order by data_inicio desc
